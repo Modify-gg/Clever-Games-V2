@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Play Crazy Chicken 3D Game Online!</title>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noodp, noydir">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta http-equiv="Content-Language" content="en-US">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    }
+
+    /* FIX: force full height so iframe doesn't stretch weirdly */
+    html, body {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+    }
+
+    /* FIX: container that locks iframe perfectly */
+    .game-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .game-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- FIXED: iframe wrapped so it cannot stretch incorrectly -->
+<div class="game-container">
+    <iframe
+        id="iframehtml5"
+        src="https://html-classic.itch.zone/html/13448030/crazychicken%20web%20port/index.html"
+        allowfullscreen>
+    </iframe>
+</div>
+
+</body>
+</html>
